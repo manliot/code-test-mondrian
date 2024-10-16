@@ -1,0 +1,80 @@
+.app-container {
+  padding: 2rem 1rem;
+}
+
+.composition-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.composition-container {
+  background-color: #000000;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.lightgray {
+  background-color: #c6c5c9;
+}
+
+.darkgray {
+  background-color: #a1a1a1;
+}
+
+.salmon {
+  background-color: #b94022;
+}
+
+.black {
+  background-color: #080808;
+}
+
+.blue {
+  background-color: #132639;
+}
+
+.yellow {
+  background-color: #debf44;
+}
+
+.lightgray,
+.darkgray .salmon,
+.black,
+.blue,
+.yellow {
+  aspect-ratio: 1 / 1;
+}
+
+@media screen and (min-width: 600px) {
+  .app-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .composition-container {
+    margin: 1rem auto;
+    width: 600px;
+    height: 600px;
+
+    display: grid;
+    grid-template-areas:
+      "a e e e u u"
+      "b f j j u u"
+      "b g g p v ab"
+      "b h k q x ac"
+      "c i l q x ac"
+      "c i m r y ac"
+      "c i n s z ad"
+      "d d o o aa ad";
+    grid-template-rows: 0.2fr 1.5fr 1.9fr 2.7fr 1.8fr 1.8fr 2.3fr 0.8fr;
+    grid-template-columns: 1.7fr 1.4fr 3.6fr 2.5fr 2.7fr 0.7fr;
+    div {
+      width: initial;
+      height: initial;
+      aspect-ratio: initial;
+    }
+  }
+}
