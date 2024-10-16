@@ -56,8 +56,8 @@
 
   .composition-container {
     margin: 1rem auto;
-    width: calc(600px - 1rem);
-    height: calc(600px - 1rem);
+    width: calc(600px - 5rem);
+    height: calc(600px - 5rem);
 
     display: grid;
     grid-template-areas:
